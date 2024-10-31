@@ -54,7 +54,7 @@ jobs:
 #Check if  the cluster name and rg is created on azure ..
       - name: Deploy Application
         run: |
-          az aks get-credentials -n "manojaks" -g "manoj"
+          az aks get-credentials -n "manojaks" -g "manoj1"
           kubectl apply -f ./AKSApp/aks-store-quickstart.yaml
           sleep 40
           kubectl get service store-front

@@ -6,7 +6,7 @@ resource "random_pet" "rg_name" {
 
 resource "azurerm_resource_group" "rg" {
   location = var.resource_group_location
-  name     = "manoj"
+  name     = "manoj1"
 }
 
 /* resource "random_pet" "azurerm_kubernetes_cluster_name" {
