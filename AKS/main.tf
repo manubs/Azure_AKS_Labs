@@ -30,7 +30,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
   default_node_pool {
     name       = "agentpool"
     vm_size    = "Standard_D4s_v3"
-    node_count = var.node_count
+    node_count = 1
   }
   linux_profile {
       admin_username = var.username
