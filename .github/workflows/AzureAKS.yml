@@ -51,7 +51,7 @@ jobs:
 
       - name: Terraform Output
         run: terraform output
-
+#Check if  the cluster name and rg is created on azure ..
       - name: Deploy Application
         run: |
           az aks get-credentials -n "cluster-exotic-cat" -g "rg-witty-kite"
