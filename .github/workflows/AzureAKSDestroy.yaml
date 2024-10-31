@@ -1,4 +1,4 @@
-name: Azure AKS Monitroring With Prometheus and Grafana
+name: Azure AKS Destroy
 on:
   workflow_dispatch:
 
