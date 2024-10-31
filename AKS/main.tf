@@ -33,11 +33,11 @@ resource "azurerm_kubernetes_cluster" "k8s" {
     node_count = var.node_count
   }
   linux_profile {
-    admin_username = var.username
+      admin_username = var.username
 
-    ssh_key {
-      key_data = jsondecode(azapi_resource_action.ssh_public_key_gen.output).publicKey
-    }
+      ssh_key {
+        key_data = azapi_resource_action.ssh_public_key_gen.output.publicKey
+      }
   }
   network_profile {
     network_plugin    = "kubenet"
