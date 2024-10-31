@@ -28,3 +28,8 @@ variable "username" {
   description = "The admin username for the new cluster."
   default     = "azureadmin"
 }
+
+variable "aks_cluster_name" {
+  description = "The name of the Azure Kubernetes Service cluster"
+  default     = "manojaks"  # Change this to your desired cluster name
+}
